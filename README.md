@@ -17,7 +17,7 @@ MovableTypeのPluginディレクトリにプラグインのディレクトリを
 
 MovableTypeの任意のテンプレート上で使用することができます。下記は、AssetIDが1のファイルをbase64エンコードした文字列をhtmlに埋め込み表示させる場合の例です。
 
-` <html> <body> <mt:SetVarBlock name="asset_file"><mt:Asset id="1"><$mt:AssetFilePath$></mt:Asset></mt:SetVarBlock> <img src="data:image/png;base64,<$mt:ImageBase64 filepath="$asset_file"$>"> </body> </html>`
+` <html> <body> <mt:SetVarBlock name="asset_file"><mt:Asset id="1"><$mt:AssetFilePath$></mt:Asset></mt:SetVarBlock> <img src="<$mt:ImageBase64 filepath="$asset_file"$>"> </body> </html>`
 
 このプラグインの利用、及び著作権や保証について
 ----------------------------------------------
@@ -31,3 +31,4 @@ Free Software FoundationのGNU General Public Licensenのもとで公開され�
 ------
 
 作者：[Alliance Port, LLC](http://www.allianceport.jp/)
+
