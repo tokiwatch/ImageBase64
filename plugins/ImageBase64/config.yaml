@@ -1,0 +1,11 @@
+id: imagebase64
+key: MT::Plugin::ImageBase64
+name: ImageBase64
+version: 0.1
+description: <MT_TRANS phrase='description of ImageBase64'>
+author_name: Alliance Port, LLC
+author_link: http://www.allianceport.jp/
+l10n_class: ImageBase64::L10N
+tags:
+    function:
+        ImageBase64: $ImageBase64::ImageBase64::ContextHandlers::hdlr_tag
